@@ -56,7 +56,7 @@ Instead, 1rem = 1 em = 16px */
 /* BELOW 944px (Tablets) */
 /****************************/
 
-@media (max-width: 58em) {
+@media (max-width: 59em) {
   html {
     font-size: 50%;
   }
@@ -106,10 +106,13 @@ Instead, 1rem = 1 em = 16px */
 
   .btn-mobile-nav {
     display: block;
+    z-index: 999;
   }
 
   .main-nav {
-    background-color: rgba(255, 255, 255, 0.96);
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
     position: absolute;
     top: 0;
     left: 0;
@@ -230,7 +233,7 @@ Instead, 1rem = 1 em = 16px */
   .hero-img {
     width: 80%;
   }
-  
+
   .logos img {
     height: 1.2rem;
   }
@@ -244,7 +247,7 @@ Instead, 1rem = 1 em = 16px */
   } */
 
   .step-img-box {
-    transform: translateY(-2.4rem) ;
+    transform: translateY(-2.4rem);
   }
 
   .step-number {
@@ -272,9 +275,61 @@ Instead, 1rem = 1 em = 16px */
   .cta-text-box {
     padding: 3.2rem;
   }
-
-
-
-
-
 }
+
+/* ************************** */
+/* Fixing Safari flexbox gap */
+/* **Only for training** 
+Safari 16 was released on September 12, 2022.
+This update brought several new features 
+and improvements, including better support 
+for the gap property in flexbox */
+/* ************************** */
+
+
+/* .no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8;
+}
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+} 
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribure:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
+}
+ */
+
+

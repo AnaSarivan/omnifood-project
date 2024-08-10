@@ -3,14 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year. It's tailored to your tastes and nutritional needs"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon-48.png" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Libre+Baskerville&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-    <title>Omnifood</title>
+    <title>Omnifood &mdash; Eat Healthy Everyday!</title>
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/queries.css" />
@@ -31,7 +38,7 @@
             <a href="#testimonials" class="main-nav-link">Testimonials</a>
           </li>
           <li><a href="#pricing" class="main-nav-link">Pricing</a></li>
-          <li><a href="#" class="main-nav-link nav-cta">Try for free</a></li>
+          <li><a href="#cta" class="main-nav-link nav-cta">Try for free</a></li>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -52,10 +59,12 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a href="#cta" class="btn btn--full margin-right-sm"
               >Start eating well</a
             >
-            <a href="#" class="btn btn--outline">Learn more &darr;</a>
+            <a href="#how-it-works" class="btn btn--outline"
+              >Learn more &darr;</a
+            >
             <div class="delivered-meals">
               <div class="delivered-imgs">
                 <img src="img/customers/customer-1.jpg" alt="Customer photo" />
@@ -71,11 +80,15 @@
             </div>
           </div>
           <div class="hero-img-box">
-            <img
-              src="img/hero.png"
-              alt="Woman enjoying food, meals in storage container, and food bowls on a table"
-              class="hero-img"
-            />
+            <picture>
+              <source srcset="img/hero.webp" type="image/webp" />
+              <source srcset="img/hero-min.png" type="image/png" />
+              <img
+                src="img/hero-min.png"
+                alt="Woman enjoying food, meals in storage container, and food bowls on a table"
+                class="hero-img"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -466,7 +479,7 @@
               </li>
             </ul>
             <div class="plan-sing-up">
-              <a href="#" class="btn btn--full">Start eating well</a>
+              <a href="#cta" class="btn btn--full">Start eating well</a>
             </div>
           </div>
 
@@ -495,7 +508,7 @@
               </li>
             </ul>
             <div class="plan-sing-up">
-              <a href="#" class="btn btn--full">Start eating well</a>
+              <a href="#cta" class="btn btn--full">Start eating well</a>
             </div>
           </div>
         </div>
@@ -544,7 +557,7 @@
         </div>
       </section>
 
-      <section class="section-cta">
+      <section class="section-cta" id="cta">
         <div class="container">
           <div class="cta">
             <div class="cta-text-box">
@@ -607,23 +620,24 @@
           </a>
           <ul class="social-links">
             <li>
-              <a class="footer-link" href="#"
+              <a class="footer-link" href="#" alt="instagram-logo"
                 ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
               ></a>
             </li>
             <li>
-              <a class="footer-link" href="#"
+              <a class="footer-link" href="#" alt="facebook-logo"
                 ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
               ></a>
             </li>
             <li>
-              <a class="footer-link" href="#"
+              <a class="footer-link" href="#" alt="twitter logo"
                 ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
               ></a>
             </li>
           </ul>
           <p class="copyright">
-            Copyright &copy; 2024 by Omnifood, Inc. All rights reserved.
+            Copyright &copy; <span class="year">2023</span> by Omnifood, Inc.
+            All rights reserved.
           </p>
         </div>
         <div class="address-col">
@@ -670,6 +684,19 @@
           </ul>
         </nav>
       </div>
+      <div class="container">
+        <p class="course-info">
+          Learning Project Executed by Ana Sarivan <br />
+          &copy; Part of "Build Responsive Real-World Websites with HTML and
+          CSS" online course by Jonas Schmedtmann on
+          <a
+            class="course-link"
+            href="https://www.udemy.com/course/design-and-develop-a-killer-website-with-html5-and-css3/?couponCode=KEEPLEARNING"
+            target="_blank"
+            >udemy.com</a
+          >
+        </p>
+      </div>
     </footer>
 
     <script
@@ -680,5 +707,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
