@@ -55,6 +55,9 @@ body {
   color: #555;
   /* Only works if there is nothing absolutely positioned in relation to bady */
   overflow-x: hidden;
+
+  --primary-color: #e67e22;
+  --tints-color: #fdf2e9;
 }
 
 /* ************************* */
@@ -154,7 +157,7 @@ body {
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #e67e22;
+  background-color: var(--primary-color);
   color: #fff;
 }
 
@@ -171,14 +174,14 @@ body {
 
 .btn--outline:hover,
 .btn--outline:active {
-  background-color: #fdf2e9;
+  background-color: var(--tints-color);
 
   box-shadow: inset 0 0 0 3px #fff;
 }
 
 .btn--form {
     background-color: #45260a;
-    color: #fdf2e9;
+    color: var(--tints-color);
     align-self: end;
     padding: 1.2rem;
 }
@@ -190,7 +193,7 @@ body {
 
 .link:link,
 .link:visited {
-  color: #e67e22;
+  color: var(--primary-color);
   text-decoration: none;
   border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
@@ -228,7 +231,7 @@ body {
 .list-icon {
   width: 3rem;
   height: 3rem;
-  color: #e67e22;
+  color: var(--primary-color);
 }
 
 .margin-right-sm {

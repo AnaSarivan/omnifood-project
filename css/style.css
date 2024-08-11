@@ -1,3 +1,9 @@
+
+/* Color variable: 
+--primary-color: #e67e22;
+  --tints-color: #fdf2e9;
+*/
+
 /* ************************* */
 /* HEADER */
 /* ************************* */
@@ -6,7 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fdf2e9;
+  background-color: var(--tints-color);
 
   height: 9.6rem;
   padding: 0 4.8rem;
@@ -66,7 +72,7 @@
   padding: 1.2rem 2.4rem;
   border-radius: 9px;
   color: #fff;
-  background-color: #e67e22;
+  background-color: var(--primary-color);
 }
 
 .main-nav-link.nav-cta:hover,
@@ -100,7 +106,7 @@
 /* HERO SECTION */
 /* ************************* */
 .section-hero {
-  background-color: #fdf2e9;
+  background-color: var(--tints-color);
   padding: 4.8rem 0 9.6rem 0;
 }
 
@@ -140,7 +146,7 @@
   width: 4.8rem;
   border-radius: 50%;
   margin-right: -1.6rem;
-  border: 3px solid #fdf2e9;
+  border: 3px solid var(--tints-color);
 }
 
 .delivered-imgs img:last-child {
@@ -228,7 +234,7 @@
 .step-img-box::before {
   width: 60%;
   padding-bottom: 60%;
-  background-color: #fdf2e9;
+  background-color: var(--tints-color);
 
   z-index: -2;
 }
@@ -317,7 +323,7 @@
 .meal-icon {
   height: 2.4rem;
   right: 2.4rem;
-  color: #e67e22;
+  color: var(--primary-color);
 }
 
 .meal-img {
@@ -334,7 +340,7 @@
 /* ************************* */
 
 .section-testimonials {
-  background-color: #fdf2e9;
+  background-color: var(--tints-color);
   display: grid;
   grid-template-columns: 55fr 45fr;
   align-items: center;
@@ -404,12 +410,12 @@
 
 .pricing-plan--starter {
   justify-self: end;
-  border: 2px solid #fdf2e9;
+  border: 2px solid var(--tints-color);
   padding: 4.6rem;
 }
 
 .pricing-plan--complete {
-  background-color: #fdf2e9;
+  background-color: var(--tints-color);
   padding: 4.8rem;
   position: relative;
   overflow: hidden;
@@ -475,12 +481,12 @@
 }
 
 .feature-icon {
-  color: #e67e22;
+  color: var(--primary-color);
   height: 3.2rem;
   width: 3.2rem;
   margin-bottom: 3.2rem;
 
-  background-color: #fdf2e9;
+  background-color: var(--tints-color);
   padding: 1.6rem;
   border-radius: 50%;
 }
@@ -563,7 +569,7 @@
   font-family: inherit;
   color: inherit;
   border: none;
-  background-color: #fdf2e9;
+  background-color: var(--tints-color);
   border-radius: 9px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
