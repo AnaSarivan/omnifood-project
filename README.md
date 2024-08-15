@@ -1,4 +1,4 @@
-**Omnifood: Fully Responsive Landing Page**
+## **Omnifood: Fully Responsive Landing Page**
 
 The Omnifood project is a modern, fully responsive landing page designed to showcase a hypothetical food delivery service. The website is meticulously crafted using HTML, CSS, and JavaScript, ensuring a seamless user experience across all devices, from desktop monitors to smartphones.
 
